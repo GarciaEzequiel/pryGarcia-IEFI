@@ -33,13 +33,12 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(121, 121);
+            this.btnIniciar.Location = new System.Drawing.Point(62, 129);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(115, 23);
             this.btnIniciar.TabIndex = 9;
@@ -50,7 +49,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(133, 70);
+            this.lblContraseña.Location = new System.Drawing.Point(74, 65);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(91, 13);
             this.lblContraseña.TabIndex = 8;
@@ -60,7 +59,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(147, 21);
+            this.lblUsuario.Location = new System.Drawing.Point(88, 16);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(63, 13);
             this.lblUsuario.TabIndex = 7;
@@ -68,35 +67,24 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(65, 86);
+            this.txtContraseña.Location = new System.Drawing.Point(44, 81);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(226, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(151, 20);
             this.txtContraseña.TabIndex = 6;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(65, 37);
+            this.txtUsuario.Location = new System.Drawing.Point(44, 32);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(226, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(151, 20);
             this.txtUsuario.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(121, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 192);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(238, 168);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
@@ -116,7 +104,6 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Button button1;
     }
 }
 
