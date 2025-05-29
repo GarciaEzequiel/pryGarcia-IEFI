@@ -34,27 +34,27 @@
             this.uSUARIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aUDITORIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.lblUserIngresado = new System.Windows.Forms.ToolStripLabel();
-            this.lblFechaLogin = new System.Windows.Forms.ToolStripLabel();
+            this.lblIngreso = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tAREASToolStripMenuItem,
             this.aDMINISTRACIONToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(502, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(669, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // tAREASToolStripMenuItem
             // 
             this.tAREASToolStripMenuItem.Name = "tAREASToolStripMenuItem";
-            this.tAREASToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.tAREASToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.tAREASToolStripMenuItem.Text = "TAREAS";
             // 
             // aDMINISTRACIONToolStripMenuItem
@@ -63,53 +63,48 @@
             this.uSUARIOSToolStripMenuItem,
             this.aUDITORIAToolStripMenuItem});
             this.aDMINISTRACIONToolStripMenuItem.Name = "aDMINISTRACIONToolStripMenuItem";
-            this.aDMINISTRACIONToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
+            this.aDMINISTRACIONToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.aDMINISTRACIONToolStripMenuItem.Text = "ADMINISTRACION";
             // 
             // uSUARIOSToolStripMenuItem
             // 
             this.uSUARIOSToolStripMenuItem.Name = "uSUARIOSToolStripMenuItem";
-            this.uSUARIOSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uSUARIOSToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.uSUARIOSToolStripMenuItem.Text = "USUARIOS";
             // 
             // aUDITORIAToolStripMenuItem
             // 
             this.aUDITORIAToolStripMenuItem.Name = "aUDITORIAToolStripMenuItem";
-            this.aUDITORIAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aUDITORIAToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.aUDITORIAToolStripMenuItem.Text = "AUDITORIA";
             // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblUserIngresado,
-            this.lblFechaLogin});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 427);
+            this.lblIngreso});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 531);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(502, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(669, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // lblUserIngresado
+            // lblIngreso
             // 
-            this.lblUserIngresado.Name = "lblUserIngresado";
-            this.lblUserIngresado.Size = new System.Drawing.Size(50, 22);
-            this.lblUserIngresado.Text = "Usuario:";
-            // 
-            // lblFechaLogin
-            // 
-            this.lblFechaLogin.Name = "lblFechaLogin";
-            this.lblFechaLogin.Size = new System.Drawing.Size(44, 22);
-            this.lblFechaLogin.Text = "Fecha: ";
+            this.lblIngreso.Name = "lblIngreso";
+            this.lblIngreso.Size = new System.Drawing.Size(12, 22);
+            this.lblIngreso.Text = ".";
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 452);
+            this.ClientSize = new System.Drawing.Size(669, 556);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPrincipal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
@@ -130,7 +125,6 @@
         private System.Windows.Forms.ToolStripMenuItem uSUARIOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aUDITORIAToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel lblUserIngresado;
-        private System.Windows.Forms.ToolStripLabel lblFechaLogin;
+        private System.Windows.Forms.ToolStripLabel lblIngreso;
     }
 }
