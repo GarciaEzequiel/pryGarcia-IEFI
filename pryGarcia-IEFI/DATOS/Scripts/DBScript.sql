@@ -16,7 +16,8 @@ BEGIN
 	Dni NVARCHAR (50),
         Contraseña NVARCHAR(50),
         Area NVARCHAR(50),
-        Activo BIT
+        Activo BIT,
+	NombreUsuario NVARCHAR (50),
     );
 END
 GO

@@ -28,55 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tAREASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDMINISTRACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uSUARIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aUDITORIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mstPrincipal = new System.Windows.Forms.MenuStrip();
+            this.tstTareas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstAdministracion = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstAuditoria = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.lblIngreso = new System.Windows.Forms.ToolStripLabel();
-            this.menuStrip1.SuspendLayout();
+            this.mstPrincipal.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // mstPrincipal
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tAREASToolStripMenuItem,
-            this.aDMINISTRACIONToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(669, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mstPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mstPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstTareas,
+            this.tstAdministracion});
+            this.mstPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.mstPrincipal.Name = "mstPrincipal";
+            this.mstPrincipal.Size = new System.Drawing.Size(953, 28);
+            this.mstPrincipal.TabIndex = 0;
+            this.mstPrincipal.Text = "menuStrip1";
             // 
-            // tAREASToolStripMenuItem
+            // tstTareas
             // 
-            this.tAREASToolStripMenuItem.Name = "tAREASToolStripMenuItem";
-            this.tAREASToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.tAREASToolStripMenuItem.Text = "TAREAS";
+            this.tstTareas.Name = "tstTareas";
+            this.tstTareas.Size = new System.Drawing.Size(75, 24);
+            this.tstTareas.Text = "TAREAS";
             // 
-            // aDMINISTRACIONToolStripMenuItem
+            // tstAdministracion
             // 
-            this.aDMINISTRACIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.uSUARIOSToolStripMenuItem,
-            this.aUDITORIAToolStripMenuItem});
-            this.aDMINISTRACIONToolStripMenuItem.Name = "aDMINISTRACIONToolStripMenuItem";
-            this.aDMINISTRACIONToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
-            this.aDMINISTRACIONToolStripMenuItem.Text = "ADMINISTRACION";
+            this.tstAdministracion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstUsuarios,
+            this.tstAuditoria});
+            this.tstAdministracion.Name = "tstAdministracion";
+            this.tstAdministracion.Size = new System.Drawing.Size(146, 24);
+            this.tstAdministracion.Text = "ADMINISTRACION";
             // 
-            // uSUARIOSToolStripMenuItem
+            // tstUsuarios
             // 
-            this.uSUARIOSToolStripMenuItem.Name = "uSUARIOSToolStripMenuItem";
-            this.uSUARIOSToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
-            this.uSUARIOSToolStripMenuItem.Text = "USUARIOS";
+            this.tstUsuarios.Name = "tstUsuarios";
+            this.tstUsuarios.Size = new System.Drawing.Size(224, 26);
+            this.tstUsuarios.Text = "USUARIOS";
             // 
-            // aUDITORIAToolStripMenuItem
+            // tstAuditoria
             // 
-            this.aUDITORIAToolStripMenuItem.Name = "aUDITORIAToolStripMenuItem";
-            this.aUDITORIAToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
-            this.aUDITORIAToolStripMenuItem.Text = "AUDITORIA";
+            this.tstAuditoria.Name = "tstAuditoria";
+            this.tstAuditoria.Size = new System.Drawing.Size(224, 26);
+            this.tstAuditoria.Text = "AUDITORIA";
+            this.tstAuditoria.Click += new System.EventHandler(this.tstAuditoria_Click);
             // 
             // toolStrip1
             // 
@@ -84,9 +85,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblIngreso});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 531);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 597);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(669, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(953, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -100,16 +101,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 556);
+            this.ClientSize = new System.Drawing.Size(953, 622);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.mstPrincipal);
+            this.MainMenuStrip = this.mstPrincipal;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mstPrincipal.ResumeLayout(false);
+            this.mstPrincipal.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -119,11 +121,11 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tAREASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDMINISTRACIONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uSUARIOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aUDITORIAToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip mstPrincipal;
+        private System.Windows.Forms.ToolStripMenuItem tstTareas;
+        private System.Windows.Forms.ToolStripMenuItem tstAdministracion;
+        private System.Windows.Forms.ToolStripMenuItem tstUsuarios;
+        private System.Windows.Forms.ToolStripMenuItem tstAuditoria;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel lblIngreso;
     }

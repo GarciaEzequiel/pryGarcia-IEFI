@@ -1,4 +1,5 @@
 ﻿using pryGarcia_IEFI.DATOS;
+using pryGarcia_IEFI.MODELOS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,11 +32,24 @@ namespace pryGarcia_IEFI
 
             if (usuario != null)
             {
-                MessageBox.Show($"¡Bienvenido {usuario.Nombre} {usuario.Apellido} ({usuario.Area})!");
-                // Podés abrir el formulario principal o pasar datos del usuario
+                //MessageBox.Show($"¡Bienvenido {usuario.Nombre} {usuario.Apellido} ({usuario.Area})!");
+
+                clsAuditoriaDatos datos = new clsAuditoriaDatos();
+                clsAuditoria nueva = new clsAuditoria
+                {
+                    IdUsuario = usuario.IdUsuario,
+                    Fecha = DateTime.Now,
+                    TiempoUso = 0
+                };
+                int idAuditoria = datos.RegistrarAuditoriaYDevolverId(nueva);
+
+                usuario.IdAuditoriaSesion = idAuditoria;
+                usuario.FechaAcceso = nueva.Fecha;
+
                 this.Hide();
-                frmPrincipal principal = new frmPrincipal(usuario);
-                principal.Show();
+                frmPrincipal frmPrincipal = new frmPrincipal(usuario, idAuditoria, nueva.Fecha);
+                frmPrincipal.Show();
+
             }
             else
             {

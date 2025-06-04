@@ -17,5 +17,9 @@ namespace pryGarcia_IEFI
         public bool Activo { get; set; }
         public string NombreUsuario { get; set; }
 
+        public int IdAuditoriaSesion { get; set; }
+        
+        public DateTime FechaAcceso { get; set; }
+
     }
 }
