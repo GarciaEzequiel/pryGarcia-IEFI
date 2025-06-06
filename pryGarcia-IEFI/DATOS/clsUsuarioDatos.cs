@@ -15,7 +15,7 @@ namespace pryGarcia_IEFI.DATOS
             clsUsuario usuario = null;
 
             string query = "SELECT * FROM Usuarios WHERE NombreUsuario = @nombreUsuario AND Contraseña = @contraseña AND Activo = 1";
-
+            //string query = "SELECT IdUsuario, NombreUsuario, Contraseña, Activo, CambiarContraseña \r\nFROM Usuarios \r\nWHERE NombreUsuario = @nombreUsuario AND Contraseña = @contraseña AND Activo = 1";
             using (SqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
@@ -31,13 +31,14 @@ namespace pryGarcia_IEFI.DATOS
                             usuario = new clsUsuario
                             {
                                 IdUsuario = (int)reader["IdUsuario"],
-                                Nombre = reader["Nombre"].ToString(),
-                                Apellido = reader["Apellido"].ToString(),
-                                Dni = reader["Dni"].ToString(),
+                                //Nombre = reader["Nombre"].ToString(),
+                                //Apellido = reader["Apellido"].ToString(),
+                                //Dni = reader["Dni"].ToString(),
                                 Contraseña = reader["Contraseña"].ToString(),
                                 Area = reader["Area"].ToString(),
                                 Activo = (bool)reader["Activo"],
-                                NombreUsuario = reader["NombreUsuario"].ToString()
+                                NombreUsuario = reader["NombreUsuario"].ToString(),
+                                CambiarContraseña = (bool)reader["CambiarContraseña"]
                             };
                         }
                     }
@@ -45,7 +46,19 @@ namespace pryGarcia_IEFI.DATOS
             }
             return usuario;
         }
-
-
+        public void ActualizarContraseña(int idUsuario, string nuevaContraseña)
+        {
+            using (SqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+                string query = "UPDATE Usuarios SET Contraseña = @contraseña, CambiarContraseña = 0 WHERE IdUsuario = @id";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@contraseña", nuevaContraseña);
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

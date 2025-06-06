@@ -71,6 +71,7 @@
             this.tstUsuarios.Name = "tstUsuarios";
             this.tstUsuarios.Size = new System.Drawing.Size(224, 26);
             this.tstUsuarios.Text = "USUARIOS";
+            this.tstUsuarios.Click += new System.EventHandler(this.tstUsuarios_Click);
             // 
             // tstAuditoria
             // 

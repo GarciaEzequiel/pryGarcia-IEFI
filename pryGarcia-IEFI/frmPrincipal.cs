@@ -53,5 +53,11 @@ namespace pryGarcia_IEFI
             frmAuditoria auditoria = new frmAuditoria(usuarioIngresado);
             auditoria.Show();
         }
+
+        private void tstUsuarios_Click(object sender, EventArgs e)
+        {
+            frmUsuarios usuarios = new frmUsuarios(usuarioIngresado);
+            usuarios.Show();
+        }
     }
 }

@@ -32,8 +32,16 @@ namespace pryGarcia_IEFI
 
             if (usuario != null)
             {
-                //MessageBox.Show($"¡Bienvenido {usuario.Nombre} {usuario.Apellido} ({usuario.Area})!");
+                if (usuario.CambiarContraseña)
+                {
+                    frmCambiarContraseña cambiarForm = new frmCambiarContraseña(usuario);
+                    if (cambiarForm.ShowDialog() != DialogResult.OK)
+                    {
+                        MessageBox.Show("Debe cambiar su contraseña para continuar.");
+                        return;
+                    }
 
+                }
                 clsAuditoriaDatos datos = new clsAuditoriaDatos();
                 clsAuditoria nueva = new clsAuditoria
                 {

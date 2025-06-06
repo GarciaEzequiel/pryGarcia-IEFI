@@ -87,11 +87,41 @@
     <Compile Include="DATOS\clsAuditoriaDatos.cs" />
     <Compile Include="DATOS\clsConexion.cs" />
     <Compile Include="DATOS\clsUsuarioDatos.cs" />
+    <Compile Include="FORMULARIOS USUARIOS\frmEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmEliminar.Designer.cs">
+      <DependentUpon>frmEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmFichaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmFichaPersonal.Designer.cs">
+      <DependentUpon>frmFichaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmModificar.Designer.cs">
+      <DependentUpon>frmModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS USUARIOS\frmRegistrar.Designer.cs">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAuditoria.Designer.cs">
       <DependentUpon>frmAuditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambiarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarContraseña.Designer.cs">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -115,8 +145,23 @@
     <Compile Include="MODELOS\clsUsuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMULARIOS USUARIOS\frmEliminar.resx">
+      <DependentUpon>frmEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS USUARIOS\frmFichaPersonal.resx">
+      <DependentUpon>frmFichaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS USUARIOS\frmModificar.resx">
+      <DependentUpon>frmModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS USUARIOS\frmRegistrar.resx">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAuditoria.resx">
       <DependentUpon>frmAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambiarContraseña.resx">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

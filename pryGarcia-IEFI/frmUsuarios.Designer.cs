@@ -28,48 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.mstUsuarios = new System.Windows.Forms.MenuStrip();
+            this.tstFichaPersonal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstRegistrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstModificar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tstEliminar = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.labae = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblUsuarioIngresado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.mstUsuarios.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // mstUsuarios
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarToolStripMenuItem,
-            this.registrarUsuarioToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(953, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mstUsuarios.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mstUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstFichaPersonal,
+            this.tstRegistrar,
+            this.tstModificar,
+            this.tstEliminar});
+            this.mstUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.mstUsuarios.Name = "mstUsuarios";
+            this.mstUsuarios.Size = new System.Drawing.Size(953, 28);
+            this.mstUsuarios.TabIndex = 0;
+            this.mstUsuarios.Text = "Menu Usuarios";
             // 
-            // registrarToolStripMenuItem
+            // tstFichaPersonal
             // 
-            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
-            this.registrarToolStripMenuItem.Text = "Ficha Personal";
+            this.tstFichaPersonal.Name = "tstFichaPersonal";
+            this.tstFichaPersonal.Size = new System.Drawing.Size(140, 24);
+            this.tstFichaPersonal.Text = "FICHA PERSONAL";
+            this.tstFichaPersonal.Click += new System.EventHandler(this.tstFichaPersonal_Click);
             // 
-            // registrarUsuarioToolStripMenuItem
+            // tstRegistrar
             // 
-            this.registrarUsuarioToolStripMenuItem.Name = "registrarUsuarioToolStripMenuItem";
-            this.registrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
-            this.registrarUsuarioToolStripMenuItem.Text = "Registrar Usuario";
+            this.tstRegistrar.Name = "tstRegistrar";
+            this.tstRegistrar.Size = new System.Drawing.Size(98, 24);
+            this.tstRegistrar.Text = "REGISTRAR";
+            this.tstRegistrar.Click += new System.EventHandler(this.tstRegistrar_Click);
+            // 
+            // tstModificar
+            // 
+            this.tstModificar.Name = "tstModificar";
+            this.tstModificar.Size = new System.Drawing.Size(101, 24);
+            this.tstModificar.Text = "MODIFICAR";
+            this.tstModificar.Click += new System.EventHandler(this.tstModificar_Click);
+            // 
+            // tstEliminar
+            // 
+            this.tstEliminar.Name = "tstEliminar";
+            this.tstEliminar.Size = new System.Drawing.Size(89, 24);
+            this.tstEliminar.Text = "ELIMINAR";
+            this.tstEliminar.Click += new System.EventHandler(this.tstEliminar_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labae,
+            this.lblUsuarioIngresado});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 596);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(953, 26);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // labae
+            // 
+            this.labae.Name = "labae";
+            this.labae.Size = new System.Drawing.Size(0, 20);
+            // 
+            // lblUsuarioIngresado
+            // 
+            this.lblUsuarioIngresado.Name = "lblUsuarioIngresado";
+            this.lblUsuarioIngresado.Size = new System.Drawing.Size(62, 20);
+            this.lblUsuarioIngresado.Text = "Usuario:";
             // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 622);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.mstUsuarios);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.mstUsuarios;
             this.Name = "frmUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "USUARIOS";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmUsuarios_Load);
+            this.mstUsuarios.ResumeLayout(false);
+            this.mstUsuarios.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,8 +129,13 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarUsuarioToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip mstUsuarios;
+        private System.Windows.Forms.ToolStripMenuItem tstFichaPersonal;
+        private System.Windows.Forms.ToolStripMenuItem tstRegistrar;
+        private System.Windows.Forms.ToolStripMenuItem tstModificar;
+        private System.Windows.Forms.ToolStripMenuItem tstEliminar;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel labae;
+        private System.Windows.Forms.ToolStripStatusLabel lblUsuarioIngresado;
     }
 }

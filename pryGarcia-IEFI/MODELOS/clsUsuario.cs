@@ -12,14 +12,16 @@ namespace pryGarcia_IEFI
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Dni { get; set; }
-        public string Contraseña { get; set; }
+        public DateTime fechaDeNacimiento { get; set; }
+        public string celular { get; set; }
         public string Area { get; set; }
         public bool Activo { get; set; }
+
+
+        public string Contraseña { get; set; }
         public string NombreUsuario { get; set; }
-
         public int IdAuditoriaSesion { get; set; }
-        
         public DateTime FechaAcceso { get; set; }
-
+        public bool CambiarContraseña { get; set; }
     }
 }
