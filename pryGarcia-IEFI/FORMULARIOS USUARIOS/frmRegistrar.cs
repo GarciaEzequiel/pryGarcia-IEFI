@@ -25,6 +25,6 @@ namespace pryGarcia_IEFI.FORMULARIOS_USUARIOS
             Close();
         }
 
-        
+
     }
 }

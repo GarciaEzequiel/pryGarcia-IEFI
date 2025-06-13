@@ -23,12 +23,14 @@ namespace pryGarcia_IEFI
         {
             InitializeComponent();
             this.usuarioIngresado = usuarioIngresado;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Dock = DockStyle.Fill;
             //dgvAuditoria.DataSource = null;
         }
 
         private void frmAuditoria_Load(object sender, EventArgs e)
         {
-            lblUsuarioIngresado.Text = $"Usuario: {usuarioIngresado.NombreUsuario}";
+            //lblUsuarioIngresado.Text = $"Usuario: {usuarioIngresado.NombreUsuario}";
             txtUsuario.Clear();
             dtpFechaDesde.Value = DateTime.Now;
             dtpFechaHasta.Value = DateTime.Now;
@@ -151,6 +153,11 @@ namespace pryGarcia_IEFI
                     MessageBox.Show("Error al guardar el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
     

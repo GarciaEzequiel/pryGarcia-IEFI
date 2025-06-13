@@ -18,5 +18,10 @@ namespace pryGarcia_IEFI.FORMULARIOS_USUARIOS
             this.FormBorderStyle = FormBorderStyle.None;
             this.Dock = DockStyle.Fill;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

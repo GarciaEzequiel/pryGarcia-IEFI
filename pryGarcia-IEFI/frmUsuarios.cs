@@ -26,29 +26,6 @@ namespace pryGarcia_IEFI
             lblUsuarioIngresado.Text = $"Usuario: {usuarioIngresado.NombreUsuario}";
         }
 
-        private void tstFichaPersonal_Click(object sender, EventArgs e)
-        {
-            frmFichaPersonal frm = new frmFichaPersonal();
-            AbrirFormularioUnico("frmFichaPersonal", frm);
-        }
-
-        private void tstRegistrar_Click(object sender, EventArgs e)
-        {
-            frmRegistrar frm = new frmRegistrar();
-            AbrirFormularioUnico("frmRegistrar", frm);
-        }
-
-        private void tstModificar_Click(object sender, EventArgs e)
-        {
-            frmModificar frm = new frmModificar();
-            AbrirFormularioUnico("frmModificar", frm);
-        }
-
-        private void tstEliminar_Click(object sender, EventArgs e)
-        {
-            frmEliminar frm = new frmEliminar();
-            AbrirFormularioUnico("frmEliminar", frm);
-        }
 
         private void AbrirFormularioUnico(string nombreFormulario, Form nuevoFormulario)
         {
@@ -73,5 +50,7 @@ namespace pryGarcia_IEFI
             nuevoFormulario.Location = new Point(0, 0);
             nuevoFormulario.Show();
         }
+
+        
     }
 }
